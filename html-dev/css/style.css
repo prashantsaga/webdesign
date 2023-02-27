@@ -1,0 +1,25 @@
+p{
+    color :blue
+}
+
+div
+{
+    color:aqua;
+    font-size:80px;
+}
+
+span
+{
+   color:blue;
+}
+
+.c1
+{
+    color:brown;
+    font-size:100px;
+}
+
+.test
+{
+    font-weight:bold;
+}

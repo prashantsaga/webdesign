@@ -1,0 +1,20 @@
+<html>
+    <head>
+       <script>
+          var data = ["Hello", 10.0, 78, true, 'abc', 'hello', false] ;
+            function print(){
+
+              document.getElementById('e1').innerHTML = data.join(' and ')
+            }
+            function remove() {
+               data.splice(2,3); // removing range 1st number starting no. 2nd no. how many element
+               print();
+            }
+       </script>
+    </head>
+    <body>
+       <div id="e1"></div>
+       <input type="button" value="read-all" onclick="print()">
+       <input type="button" value="remove" onclick="remove()">
+    </body>
+</html>

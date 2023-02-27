@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            table,th,td
+            {
+                border: 2px solid blue;
+                border-collapse: collapse;
+                padding: 4px;
+                width: 100%;
+                text-align: right;
+            }
+            /* tr
+            {
+                background-color: aqua;
+            } */
+            tr:nth-child(even)
+            {
+                background-color: aqua;
+            }
+            tr:nth-child(odd)
+            {
+                background-color:blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Employee Date</caption>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Prashant</td>
+                <td>sagar140793@gmail.com</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>shivanand</td>
+                <td>sagar140793@gmail.com</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>kartik</td>
+                <td>sagar140793@gmail.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Babu</td>
+                <td colspan="2">sagar140793@gmail.com</td>
+                
+            </tr>
+            <tr>
+                
+                <td colspan="3">sagar140793@gmail.com</td>
+                
+            </tr>
+            <tr>
+                 <td rowspan="2">Babu</td>
+                <td>sagar140793@gmail.com</td>
+                <td>32</td>
+            </tr>
+            
+            <td>sagar140793@gmail.com</td>
+            <td>30</td>
+
+        </table>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+    <head>
+       <script>
+          var data = [
+          
+           { firstName: "vijay",lastName: "b",age: 22},
+           { firstName: "ajay",lastName: "p",age: 26},
+           { firstName: "sujay",lastName: "r",age: 28},
+           { firstName: "sagar",lastName: "s",age: 10},
+           { firstName: "babu",lastName: "t",age: 35},
+           { firstName: "anaya",lastName: "u",age: 40},
+           { firstName: "mani",lastName: "v",age: 45},
+          
+        ]
+            function print(){
+
+              //document.getElementById('e1').innerHTML = data;
+              var v1 = "";
+              for(var i = 0; i < data.length; i++)
+              {
+               v1 += data[i].firstName + " , " +
+                     data[i].lastName + "  , " + data[i].age  + "<br>";
+                     
+              }
+              document.getElementById('e1').innerHTML = v1;
+            }
+            function sortBasedOnFirstName()
+            {
+                data.sort(function f1(a, b){
+                    if(a.firstName > b.firstName){
+                        return 1;
+                    }
+                    else if(a.firstName < b.firstName){
+                        return -1;
+                    }
+                    else{
+                        return 0;
+                    }
+                    
+
+                });
+                print();
+            }
+            function sortBasedOnLastName()
+            {
+                data.sort(function f1(a, b){
+                    if(a.lastName > b.lastName){
+                        return 1;
+                    }
+                    else if(a.lastName < b.lastName){
+                        return -1;
+                    }
+                    else{
+                        return 0;
+                    }
+                    
+
+                });
+                print();
+            }
+            function sortBasedOnage()
+            {
+                data.sort(function f1(a, b){
+                  return a.age - b.age;
+                });
+                print();
+            }
+       </script>
+    </head>
+    <body>
+       <div id="e1"></div>
+       <input type="button" value="read-all" onclick="print()"> <br>
+       <input type="button" value="short with firstName" 
+                             onclick="sortBasedOnFirstName()"> <br>
+       <input type="button" value="short with lastName"
+                             onclick="sortBasedOnLastName()"> <br>
+       <input type="button" value="short with age" 
+                            onclick="sortBasedOnage()"> <br>
+    </body>
+</html>

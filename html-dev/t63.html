@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function test()
+            {
+                if(document.forms[0].firstName.value.length == 0) // forms is an array on of the built in object
+                // there may be multiple form form of 0 represent 1st form 1 represent 2
+                // getting a value from customer these are called form control name
+                {
+                    alert("first name is required");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="success.html">
+           First Name: <input type="text" name="firstName"> <br>
+           <input type="submit" value="submit" onclick="return test()"> // method return a false not submitting
+           // in java return type is mandatory
+        </form>
+    </body>
+</html>
